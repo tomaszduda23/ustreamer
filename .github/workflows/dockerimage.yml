@@ -18,3 +18,6 @@ jobs:
 
           - name: Running linters ...
             run: make tox
+
+          - name: Check build
+            run: docker build . -f pkg/docker/Dockerfile.alpine
